@@ -1,0 +1,18 @@
+dataset_name: "timit"
+
+model_name: "MFCC"
+
+windowing:
+  fs:  16000 #dataset's sr
+  cw_len:  200
+  cw_shift:  10
+  resample: 16000 #desired sr
+  
+optimization:  
+  lr:  0.001
+  batch_size: 128
+  N_epochs:  360
+  N_batches:  2200 # 2000 batches of data at 384 batch size, 4000 if phase swapping
+  N_eval_epoch:  8
+  seed:  479
+

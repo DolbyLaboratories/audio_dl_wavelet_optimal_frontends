@@ -1,0 +1,33 @@
+esc_50:
+  name: esc_50
+  path_root: /mnt/deeplearning/dataset00/orig/esc-50-master
+  path_audio: audio
+  path_metadata: meta
+  path_tests: tests
+  filename_metadata: esc50.csv
+
+esc_50_local:
+  name: esc_50_local
+  path_root: ESC-50-master
+  path_audio: audio
+  path_metadata: meta
+  path_tests: tests
+  filename_metadata: esc50.csv
+
+timit:
+  name: timit
+  path_root: /home/allov/datasets/TIMIT
+  path_audio: none
+  path_tests: none
+  path_audio_labels: wavefront/datasets/SincNet_data_lists/TIMIT_train.scp
+  path_metadata: wavefront/datasets/SincNet_data_lists
+  path_tests_labels: wavefront/datasets/SincNet_data_lists/TIMIT_test.scp
+  filename_metadata: TIMIT_labels.npy
+
+other:
+  name: example
+  path_root: /mnt/deeplearning/dataset00/orig/TBD
+  path_audio: tbd
+  path_metadata: tbd
+  path_tests: tbd
+  filename_metadata: tbd.csv

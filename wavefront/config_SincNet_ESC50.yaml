@@ -1,0 +1,18 @@
+dataset_name: "esc-50"
+
+model_name: "SincNet"
+
+windowing:
+  fs:  44100 #dataset's sr
+  cw_len:  800
+  cw_shift:  40
+  resample: 8000 #desired sr
+  
+optimization:  
+  lr:  0.0001
+  batch_size: 256
+  N_epochs:  100
+  N_batches:  1300 # At 8k 400ms, 2200 batches if phase swapping and time stretch and p=0.8
+  N_eval_epoch:  8
+  seed:  479
+

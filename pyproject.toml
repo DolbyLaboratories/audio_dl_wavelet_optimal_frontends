@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WaveFront"
+version = "2024.0.1"
+description = "Optimal Frontends for Audio Deep Learning"
+readme = "README.md"
+requires-python = ">=3.10"
+
+
+[tool.setuptools]
+packages = ["wavefront"]
+
+

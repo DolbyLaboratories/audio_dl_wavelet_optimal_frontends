@@ -1,0 +1,18 @@
+dataset_name: "esc-50"
+
+model_name: "MFCC"
+
+windowing:
+  fs:  44100 #dataset's sr
+  cw_len:  800
+  cw_shift:  40
+  resample: 8000 #desired sr
+  
+optimization:  
+  lr:  1e-4
+  batch_size: 256
+  N_epochs:  100
+  N_batches:  1300
+  N_eval_epoch:  8
+  seed:  479
+

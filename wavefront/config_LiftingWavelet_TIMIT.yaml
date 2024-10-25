@@ -1,0 +1,17 @@
+dataset_name: "timit"
+
+model_name: "LiftingWavelet"
+
+windowing:
+  fs:  16000
+  cw_len:  200
+  cw_shift:  10
+  resample: 16000
+
+optimization:  
+  lr:  0.0001
+  batch_size: 128
+  N_epochs:  150
+  N_batches:  1300
+  N_eval_epoch: 8
+  seed:  479

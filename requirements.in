@@ -1,0 +1,30 @@
+-e file:.
+pip-tools
+black[d]
+soundfile
+numpy
+marshmallow_dataclass
+marshmallow
+matplotlib
+pedalboard
+# https://github.com/Lightning-AI/pytorch-lightning/issues/18803
+pytorch_lightning==2.0.8
+pyyaml
+pytest
+munch
+pandas>=2.1.4
+urllib3<2.1,>=1.25.4
+scikit-learn
+tensorboard
+transformers
+
+# linux server
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.1.0+cu118
+torchvision==0.16.0+cu118
+torchaudio==2.1.0+cu118
+
+# mac
+torch
+torchvision
+torchaudio

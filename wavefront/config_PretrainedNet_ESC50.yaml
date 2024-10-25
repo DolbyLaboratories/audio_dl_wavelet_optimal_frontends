@@ -1,0 +1,17 @@
+dataset_name: "esc-50"
+
+model_name: "AST"
+
+windowing:
+  fs:  44100
+  cw_len:  800
+  cw_shift:  40
+  resample: 16000
+
+optimization:  
+  lr:  0.0005
+  batch_size: 256
+  N_epochs:  100
+  N_batches:  1300  #1300*(256/64)
+  N_eval_epoch: 8
+  seed:  479
